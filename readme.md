@@ -65,12 +65,17 @@ La ejecución de la aplicación se puede ver en el documento .ipynb adjunto. Pri
 # Import necessary libraries
 from langchain_community.chat_models import ChatLlamaCpp
 import gradio as gr
+from huggingface_hub import hf_hub_download
 
-# Create the LLM
-# Although it's slower, we load the full model instead of just the LoRA adapters
-# This approach simplifies deployment and provides better compatibility with llama.cpp
+model_path = hf_hub_download(
+    repo_id  = "AigarciabFabero/QwenPhysics-Q4_k_M",
+    # filename = "QwenPhysics-F16.gguf",
+    filename = "QwenPhysics-Q4_K_M.gguf",
+    force_download = False,
+)
+
 llm = ChatLlamaCpp(
-    model_path="/content/drive/MyDrive/unsloth-F16.gguf",
+    model_path=model_path,
     n_gpu_layers=25,
     stop=["<|im_end|>\n"],
     n_ctx=4096,
