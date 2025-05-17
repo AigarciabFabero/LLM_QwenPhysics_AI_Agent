@@ -124,8 +124,7 @@ if __name__ == "__main__":
 
 Una vez hemos lanzado el chatbot, podemos interactuar con el modelo y ver su rendimiento en tiempo real. En el caso de este proyecto, se ha empleado un conjunto de datos de artículos de física extraídos de arXiv, que se han utilizado para entrenar el modelo y mejorar su rendimiento en tareas específicas relacionadas con la física.
 
-<img src="./Video/QwenPhysics.gif" height="480" alt="QwenPhysics">
-
+![QwenPhysics.gift](./Video/QwenPhysics.png)
 
 **Algunas cuestiones para evaluar el modelo:**
 
