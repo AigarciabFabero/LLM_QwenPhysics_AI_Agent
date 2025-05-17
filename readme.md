@@ -9,7 +9,7 @@
 
 ## Objetivo de la aplicación
 
-El objeto principal de este proyecto es desarrollar una aplicación para la generación de texto en un ámbito más exigente de lo convencional, como es la Física. Es sabido por los usuarios que los modelos generativos carecen en muchas ocasiones, de coherencia lógica-matemática y de conocimiento específico en áreas concretas. Por esto, dentro del hardware que disponemos y la limitación de recursos, se realiza *finnetuning* de un modelo Qwen pre-entrenado, con el fin de mejorar su rendimiento en tareas específicas relacionadas con la física.
+El objeto principal de este proyecto es definir y desarrollar un prototipo de aplicación para la generación de texto en un ámbito más exigente de lo convencional como es la Física. Es sabido por los usuarios que los modelos generativos carecen en muchas ocasiones, de coherencia lógica-matemática y de conocimiento específico en áreas científico-técnicas. Por esto, dentro del hardware que disponemos y la limitación de recursos, se realiza *finnetuning* de un modelo Qwen pre-entrenado, con el fin de mejorar su rendimiento en tareas específicas relacionadas con la física.
 
 Además, se pondrá a prueba en diferentes contextos de entrenamiento para evaluar el mismo y ver si es capaz de generar texto coherente. Revisar video adjunto para ver el funcionamiento de la aplicación.
 
@@ -124,15 +124,19 @@ if __name__ == "__main__":
 
 Una vez hemos lanzado el chatbot, podemos interactuar con el modelo y ver su rendimiento en tiempo real. En el caso de este proyecto, se ha empleado un conjunto de datos de artículos de física extraídos de arXiv, que se han utilizado para entrenar el modelo y mejorar su rendimiento en tareas específicas relacionadas con la física.
 
----------------------------------------------- Adjuntar imagenes de la aplicación 
+![QwenPhysics.gift](./Video/QwenPhysics.gif)
 
 **Algunas cuestiones para evaluar el modelo:**
-- Riemann zeta function?  
-- When was the michelson morley experiment?    
-- Can you write the expresion for riemann zeta function?
-- What is the term used to describe black holes?
+
+| Pregunta | Respuesta |
+|----------|-----------|
+| Riemann zeta function? | The Riemann zeta function is a mathematical function that was first studied by the mathematician Bernhard Riemann in the mid-nineteenth century. It is defined as:<br><br>ζ(s) = 1/1^s + 1/2^s + 1/3^s + 1/4^s + ...<br><br>for complex values of s with real part greater than 1. The series in the definition converges absolutely for those values of s.<br><br>The Riemann zeta function has many interesting and important properties. For example, it can be used to study the distribution of prime numbers, and the famous Riemann hypothesis, which remains unsolved, asserts that all nontrivial zeros of the function occur on the critical line s = 1/2.<br><br>The study of the Riemann zeta function is an active area of research in number theory and has connections to many other areas of mathematics and physics. |
+| When was the michelson morley experiment? | The Michelson-Morley experiment was conducted in 1887. |
+| Can you write the expresion for riemann zeta function? | ζ(s) = 1/1^s + 1/2^s + 1/3^s + 1/4^s + ... |
+| What is the term used to describe black holes? | The term used to describe black holes is "singularity". It refers to the point in space-time where the gravitational force is so strong that it causes the collapse of matter into an infinitely small and dense point. |
 
 **Pregunta extra por curiosidad de ver hasat que punto Qwuen tiene razonamiento lógico-matemático:**
+
 - ES: ¿Cuánto vale una integral de una función impar definida en un intervalo simétrico centrada en el origen? EN: What is the value of an integral of an odd function defined on a symmetric interval centered at the origin? Respuesta/answer: 0 or null.
 
 ## Posibles mejoras futuras
