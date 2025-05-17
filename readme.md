@@ -28,6 +28,8 @@ Aunque la técnica principal de nuestra aplicación se basa en **Fine-Tuning**, 
 - **Optimización de Parámetros de Inferencia**: Ajuste de temperatura (0.1) para favorecer respuestas deterministas en cálculos y conceptos científicos.
 - **Conversaciones Estructuradas**: Entrenamiento con ejemplos que mantienen una estructura consistente de sistema-usuario-asistente para mejorar la coherencia del modelo.
 
+Cabe destacar la implementación de un agente combersacional mediante Gradio y LangChain.
+
 *Para más detalle: [QwenPhysics.ipynb](./QwenPhysics.ipynb)
 
 ## Cómo instalar la aplicación y las dependencias
