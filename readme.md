@@ -59,7 +59,7 @@ pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-c
 
 ## Como ejecutar la aplicación
 
-La ejecución de la aplicación se puede ver en el documento .ipynb adjunto. Principalmente debemos carcar nuestro modelo ya entrenado ya bien sea nuestro modelo LoRa, el modelo cuantizado o la versión en float16. 
+La ejecución de la aplicación se puede ver en el documento QwenPhysics.ipynb adjunto. Principalmente debemos carcar nuestro modelo ya entrenado ya bien sea nuestro modelo LoRa, el modelo cuantizado o la versión en float16. Ambas versiones las podemos en contrar en el siguiente [enlace](https://huggingface.co/AigarciabFabero/QwenPhysics-Q4_k_M/tree/main).
 
 ```python
 # Import necessary libraries
